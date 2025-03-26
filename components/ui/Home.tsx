@@ -47,14 +47,14 @@ const Home = () => {
                         whileTap={{ scale: accepted ? 0.98 : 1 }}
                         className="w-full"
                     >
-                        <Button
-                            className={`w-full py-2 text-sm font-medium rounded-md transition-all duration-300 shadow-md cursor-pointer ${
-                                accepted ? "bg-gray-900 text-white hover:bg-gray-800" : "bg-gray-400 cursor-not-allowed"
-                            }`}
-                            disabled={!accepted}
-                        >
-                            Get Started
-                        </Button>
+                        <Link href="/onboarding">
+                            <Button
+                                className={`w-full py-2 text-sm font-medium rounded-md transition-all duration-300 shadow-md cursor-pointer ${accepted ? "bg-gray-900 text-white hover:bg-gray-800" : "bg-gray-400 cursor-not-allowed"
+                                    }`}
+                                disabled={!accepted}
+                            >
+                                Get Started
+                            </Button></Link>
                     </motion.div>
                 </CardContent>
             </Card>
